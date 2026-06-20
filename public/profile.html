@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile-SocialConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div class="logo">SocialConnect</div>
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <button onclick="logout()">Logout</button>
+    </div>
+</nav>
+<div class="container">
+    <div class="post-card">
+        <h1>User Profile</h1>
+        <h2 id="profile-name"></h2>
+    </div>
+</div>
+<script src="script.js"></script>
+<script>
+    document.getElementById("profile-name").innerText=localStorage.getItem("username")||"User";
+</script>
+
+</body>
+</html>
